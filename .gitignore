@@ -1,0 +1,4 @@
+gameenv
+.vscode
+__pycache__
+vars.py
