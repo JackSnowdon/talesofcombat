@@ -1,6 +1,47 @@
+/* Fonts */
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo:200,500,800&display=swap');
+
+
 /* Backgrounds */
 
+
 .bg {
-    background-color: black;
+    background-color: #311F18;
     height: 100%;
+    font-family: 'Exo', sans-serif;
+    color: #ebd8cd
+}
+
+
+/* NavBar */
+
+
+.nav-bg {
+    background-color: #2d2b0e;
+}
+
+.nav-bg a {
+    color: #f4f4f4;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.nav-bg a:hover {
+    color: #A73B51
+}
+
+.navbar-toggler {
+    outline: none;
+}
+
+
+/* Icons */
+
+.img-button {
+    height: 150px;
+    width: 150px;
 }
