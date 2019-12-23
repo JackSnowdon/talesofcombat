@@ -22,4 +22,5 @@ urlpatterns = [
     path('', index),
     path('home/', include('home.urls')),
     path('setup/', include('setup.urls')),
+  #  path('adventure/', include('adventure.urls')),
 ]

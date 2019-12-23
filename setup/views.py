@@ -46,3 +46,8 @@ def new_player(request):
 class SinglePlayer(DetailView):
     model = BaseModel
 
+
+def start_quest(request, id):
+    hero = BaseModel.objects.get(pk=id)
+    return render(request, "start_quest.html", {"hero": hero})
+

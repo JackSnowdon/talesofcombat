@@ -40,7 +40,7 @@
         <p class="stat-kay">!?!?!: <span class="stat-display">{{ object.soul }}</span></p>
     </div>
     <div class="col-12">
-        <a class="btn btn-success" href="#" role="button" aria-disabled="false">Venture Out!</a>
+        <a class="btn btn-success" href="{% url 'start_quest' object.id %}" role="button" aria-disabled="false">Venture Out!</a>
     </div>
 </div>
 <br>
