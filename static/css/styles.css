@@ -57,6 +57,24 @@
     text-decoration: none;
 }
 
+.name-display {
+    font-size: 2rem;
+}
+
+.race-display {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.stat-kay {
+    font-weight: 200;
+}
+
+.stat-display {
+    color: #fafafa;
+    font-weight: 500;
+}
+
 
 /* Icons */
 

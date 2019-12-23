@@ -32,8 +32,8 @@ def new_player(request):
             if stat_total > 100:
                 messages.error(request, 'Invalid Stats for {0}, stat total ({1}) greater than 100'.format(player.name, stat_total), extra_tags='alert')
             else:
-                player.max_hp = race.buffs * (defence + power)
-                player.max_mp = race.buffs * (wisdom + magik)
+                player.max_hp = race.buffs * (defence / power)
+                player.max_mp = (race.saps / 2) * (wisdom + magik)
                 player.save()
                 messages.error(request, 'Added {0}'.format(player.name), extra_tags='alert')
                 return redirect("new_game")

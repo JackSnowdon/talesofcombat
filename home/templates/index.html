@@ -15,7 +15,14 @@
     </div>
     <div class="col-6">
         <h3>Load Game?</h3>
-        <p>Button</p>
+        <br>
+        {% for p in players %}
+        <p class="current-player-name">
+            <a href="{% url 'single_player' pk=p.pk %}">
+                {{ p.name }}
+            </a>
+        </p>
+        {% endfor %}
     </div>
 </div>
 

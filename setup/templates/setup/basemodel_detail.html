@@ -1,1 +1,48 @@
     
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% load static %} {% block page_title %} View {{ object.name }}
+{% endblock %} {% block content %}
+
+
+<div class="row">
+    <div class="col-12 text-center">
+        <a class="btn btn-warning" href="{% url 'new_game' %}" role="button" aria-disabled="false">Back To Player List</a>
+        <p class="name-display">{{ object.name }}<span class="race-display"> - {{ object.race }}</span></p>
+    </div>
+</div>
+
+<h5>Stats:</h5>
+<div class="row text-center">
+    <div class="col-md-3">
+        <p class="stat-kay">Max HP: <span class="stat-display">{{ object.max_hp }}</span></p>
+    </div>
+    <div class="col-md-3">
+        <p class="stat-kay">Max MP: <span class="stat-display">{{ object.max_mp }}</span></p>
+    </div>
+    <div class="col-md-3">
+        <p class="stat-kay">Power: <span class="stat-display">{{ object.power }}</span></p>
+    </div>
+    <div class="col-md-3">
+        <p class="stat-kay">Defence: <span class="stat-display">{{ object.defence }}</span></p>
+    </div>
+    <div class="col-md-3">
+        <p class="stat-kay">Social: <span class="stat-display">{{ object.social }}</span></p>
+    </div>
+    <div class="col-md-3">
+        <p class="stat-kay">Magik: <span class="stat-display">{{ object.magik }}</span></p>
+    </div>
+    <div class="col-md-3">
+        <p class="stat-kay">Wisdom: <span class="stat-display">{{ object.wisdom }}</span></p>
+    </div>
+    <div class="col-md-3">
+        <p class="stat-kay">Dex: <span class="stat-display">{{ object.dex }}</span></p>
+    </div>
+    <div class="col-12">
+        <p class="stat-kay">!?!?!: <span class="stat-display">{{ object.soul }}</span></p>
+    </div>
+    <div class="col-12">
+        <a class="btn btn-success" href="#" role="button" aria-disabled="false">Venture Out!</a>
+    </div>
+</div>
+<br>
+
+{% endblock %}

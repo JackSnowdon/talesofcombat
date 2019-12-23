@@ -4,6 +4,7 @@
 <div class="row">
     <div class="col-12 text-center">
         <h1 class="overall-title">New Player</h1>
+        <a class="btn btn-warning" href="{% url 'new_game' %}" role="button" aria-disabled="false">Back?</a>
     </div>
 </div>
 
@@ -19,9 +20,10 @@
                 {{ player_form.race|as_crispy_field }}
             </div>
         </div>
-        <p class="text-center">Spend Your Stat Points<br />
-            <br />  
-            Current Points = 100</p>
+        <br>
+        <h4 class="text-center">Spend Your Stat Points</h4>
+           
+        <p>Current Points = 100</p>
         <div class="form-row">
             <div class="form-group col-md-2 mb-0">
                 {{ player_form.power|as_crispy_field }}
