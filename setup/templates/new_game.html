@@ -5,6 +5,29 @@
         <h1 class="overall-title">Begin New Game?</h1>
     </div>
 </div>
+<br>
+
+<div class="row">
+    <div class="col-12 text-center">
+        <a href="{% url 'new_player' %}" role="button" class="btn btn-warning" aria-disabled="false">Enter Here!</a>
+    </div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-12 text-center">
+        <h2 class="overall-title">Current Players: </h2>
+        <br>
+        {% for p in players %}
+        <p class="current-player-name">
+            <a href="{% url 'single_player' pk=p.pk %}">
+                {{ p.name }}
+            </a>
+        </p>
+        {% endfor %}
+    </div>
+</div>
+<br>
 
 
 {% endblock %}

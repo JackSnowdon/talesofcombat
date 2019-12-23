@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %} {% load crispy_forms_tags %} {% block page_title %} ToC - New Player
+{% endblock %} {% block content %}
+
+<div class="row">
+    <div class="col-12 text-center">
+        <h1 class="overall-title">New Player</h1>
+    </div>
+</div>
+
+<form role="form" method="post" id="new player" action="{% url 'new_player' %}">
+    <div class="form-group">
+        {% csrf_token %}
+        <p>Choose Your Name And Race</p>
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">
+                {{ player_form.name|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-6 mb-0">
+                {{ player_form.race|as_crispy_field }}
+            </div>
+        </div>
+        <p class="text-center">Spend Your Stat Points<br />
+            <br />  
+            Current Points = 100</p>
+        <div class="form-row">
+            <div class="form-group col-md-2 mb-0">
+                {{ player_form.power|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-2 mb-0">
+                {{ player_form.defence|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-2 mb-0">
+                {{ player_form.social|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-2 mb-0">
+                {{ player_form.magik|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-2 mb-0">
+                {{ player_form.wisdom|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-2 mb-0">
+                {{ player_form.dex|as_crispy_field }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <input class="btn btn-success" id="submit_player" name="commit" type="submit" value="Add Player">
+            </div>
+        </div>
+        <br>
+    </div>
+</form>
+
+
+{% endblock %}

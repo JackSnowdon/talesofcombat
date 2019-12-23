@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'setup',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (

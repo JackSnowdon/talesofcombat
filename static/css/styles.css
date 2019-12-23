@@ -30,6 +30,7 @@
     -o-transition: all 0.35s ease-in-out;
 }
 
+
 .nav-bg a:hover {
     color: #A73B51
 }
@@ -39,9 +40,31 @@
 }
 
 
+/* Setup */
+
+
+.current-player-name a{
+    font-size: 1.4rem;
+    color: #f4f4f4;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.current-player-name a:hover {
+    color: #a73b51;
+    text-decoration: none;
+}
+
+
 /* Icons */
+
 
 .img-button {
     height: 150px;
     width: 150px;
 }
+
+
+/* Class Helpers */
