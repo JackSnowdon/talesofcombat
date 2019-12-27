@@ -30,13 +30,17 @@
     -o-transition: all 0.35s ease-in-out;
 }
 
-
 .nav-bg a:hover {
     color: #A73B51
 }
 
 .navbar-toggler {
     outline: none;
+}
+
+.logged-in {
+    color: #f4f4f4;
+    margin: 8px 2px;
 }
 
 

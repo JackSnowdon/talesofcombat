@@ -40,7 +40,7 @@
                     <a class="nav-link" href="{% url 'profile' %}">Profile</a>
                 </li>
                 <!--- Below LI displays active user logged in -->
-                <li class="nav-item user-log">Logged in as: <span class="capitalize">{{user}}</span></li>
+                <li class="nav-item logged-in">Logged in as: <span class="capitalize">{{user}}</span></li>
                 {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}">Login</a>
